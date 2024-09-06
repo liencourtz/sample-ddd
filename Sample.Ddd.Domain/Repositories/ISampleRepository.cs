@@ -2,6 +2,6 @@
 {
     public interface ISampleRepository
     {
-        string SampleTestInterface(string interfaceName);
+        string SampleTestInterfaceDomain(string interfaceName);
     }
 }

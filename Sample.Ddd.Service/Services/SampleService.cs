@@ -14,7 +14,7 @@ namespace Sample.Ddd.Service.Services
 
         public string TestInterface(string interfaceName) //4
         {
-            var TesteInterface = _SampleRepository.SampleTestInterface(interfaceName);
+            var TesteInterface = _SampleRepository.SampleTestInterfaceDomain(interfaceName);
             return TesteInterface;
         }
     }
