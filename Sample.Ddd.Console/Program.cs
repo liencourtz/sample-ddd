@@ -6,16 +6,14 @@ namespace Sample.Ddd.Console
 {
     public class Program
     {
-        static string Main()
+        public static int Main(string[] args)
         {
             ServiceCollection services = new ServiceCollection();
             var inject = services.BuildServiceProvider();
             BusinessIntegration integration = new BusinessIntegration(inject.GetService<ISampleService>());
             var result = integration.BusinessIntegrationTeste();
             System.Console.WriteLine(result);
-            return result;
+            return 0;
         }
-
-
     }
 }
