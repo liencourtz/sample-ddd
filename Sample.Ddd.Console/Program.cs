@@ -6,7 +6,7 @@ namespace Sample.Ddd.Console
 {
     public class Program
     {
-        public string Main()
+        static string Main()
         {
             ServiceCollection services = new ServiceCollection();
             var inject = services.BuildServiceProvider();
